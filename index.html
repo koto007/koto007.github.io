@@ -4,9 +4,161 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">    
+    <title>Koto|Développeuse</title>
 </head>
 <body>
-    <h1>Bonjour</h1>
+<nav class="bg-light">
+  <a href=""><img class="logo-img" src="assets/img/logo_transparent.png" alt=""></a>
+  <div class="float-right">
+    <ul>
+      <li><a href="#home"><i class="fas fa-home"></i> <span>Home</span></a></li>
+      <li><a href="#work"><i class="fas fa-laptop-code"></i> <span>Work</span></a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
+      <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      <li><a href="#"><i class="fab fa-github"></i></a></li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- HOME(ABOUT) -->
+  <div class="container wrapper" id="home">
+    <div class="row">
+      <div class="col-12">
+        <div class="home">
+          <h2 class="bonjour mb-5">Bonjour ! Je m'appele Koto.</h2>
+          <div class="row home-block">
+            <div class="col-md-8 offset-md-1">
+              <p>Développeuse spécialisée en PHP, née au Japon, vit en France.</p>
+              <p>Curieuse et passionnée par l'informatique, je travaille dans ce domaine depuis quelques années.</p>
+              <p class="a-tag"><a href="#work">Voici quelques exemples de mes projets réalisés</a></p>
+            </div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center">
+              <img src="assets/img/profile-transparent.png" class="profile img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WORK -->
+  <div class="bg-light wrapper" id="work">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">      
+          <div class="work">
+            <h2>Work</h2>
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="card col-lg-3">
+                  <img class="card-img-top" src="assets/img/japanese_lessons.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text"><b>Ruby on rails</b> Site de réservation de cours de japonais (réserver/annuler/communiquer)</p>
+                    <a href="https://kotofrancejapon.herokuapp.com/">Visiter le site</a>
+                  </div>
+                </div>
+                <div class="card col-lg-3">
+                  <img class="card-img-top" src="assets/img/japanese_lessons.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text"><b>Django</b> Site de e-commerce</p>
+                  </div>
+                </div>
+                <div class="card col-lg-3">
+                  <img class="card-img-top" src="assets/img/japanese_lessons.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text </p>
+                  </div>
+                </div>
+                <div class="card col-lg-3">
+                  <img class="card-img-top" src="assets/img/japanese_lessons.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text </p>
+                  </div>
+                </div>
+                <div class="card col-lg-3">
+                  <img class="card-img-top" src="assets/img/japanese_lessons.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text </p>
+                  </div>
+                </div>
+                <div class="card col-lg-3">
+                  <img class="card-img-top" src="assets/img/japanese_lessons.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT FORM -->
+  <div class="container wrapper" id="contact">
+    <div class="row">
+      <div class="col-md-12">    
+        <div class="contact">
+          <h2 class="text-center">Contact</h2>
+          <p class="text-center">Si vous avez des questions, n'hésitez pas à me contacter. Je vous répondrai sous 24h.</p>
+          <form>
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="lastname">Nom</label>
+                <input type="text" class="form-control" id="lastname" aria-describedby="lastname" placeholder="Votre nom">
+              </div>
+              <div class="col-md-6">
+                <label for="firstname">Prénom</label>
+                <input type="text" class="form-control" id="firstname" aria-describedby="firstname" placeholder="Votre prénom">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="exampleInputEmail1">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Votre email">
+              </div>
+              <div class="col-md-6">
+                <label for="phone">Téléphone</label>
+                <input type="text" class="form-control" id="phone" aria-describedby="phone" placeholder="Votre numéro de téléphone">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+            </div>
+            <div class="form-group text-center">
+              <button type="submit" class="btn btn-outline-secondary">Envoyer</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div> 
+</div>
+
+  <footer class="mt-5 bg-light">
+    <div class="footer-menu">
+      <ul>
+        <li><a href="#home"><i class="fas fa-home"></i></a></li>
+        <li><a href="#work"><i class="fas fa-laptop-code"></i></a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="#"><i class="fab fa-github"></i></a></li>
+      </ul>
+    </div>
+    <small>&copy; <span id="current-year"></span> Koto <i class="fas fa-heart"></i> All Rights Reserved</small>
+  </footer>
+    
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
